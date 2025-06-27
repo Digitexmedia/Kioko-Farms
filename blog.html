@@ -2,115 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | Kioko Farms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials with Ratings</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
       margin: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background: #4CAF50;
-      color: white;
-      text-align: center;
-      padding: 30px 0;
-    }
-
-    .blog-container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .blog-post {
-      background: white;
       padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    .blog-post h2 {
-      color: #2E7D32;
-      margin-bottom: 10px;
-    }
-
-    .blog-post .date {
-      font-size: 0.9em;
-      color: #888;
-      margin-bottom: 10px;
-    }
-
-    .blog-post p {
-      line-height: 1.7;
-      font-size: 1.05em;
-    }
-
-    .home-button {
-      text-align: center;
-      margin: 40px 0;
-    }
-
-    .home-button a {
-      background: #4CAF50;
-      color: white;
-      text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .home-button a:hover {
-      background: #388E3C;
-    }
-
-    footer {
-      background: #2E7D32;
-      color: white;
-      text-align: center;
+    .testimonial {
+      background: #fff;
       padding: 20px;
-      margin-top: 60px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 15px;
+      border: 3px solid #ddd;
+    }
+
+    .rating {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .star {
+      width: 25px;
+      height: 25px;
+      background-color: gold;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+    }
+
+    .star.inactive {
+      background-color: #ccc;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Kioko Farms Blog</h1>
-    <p>Stories and updates from the heart of the farm</p>
-  </header>
 
-  <div class="blog-container">
-    <div class="blog-post">
-      <h2>Why Youth Should Embrace Agribusiness</h2>
-      <div class="date">Posted on June 10, 2025</div>
-      <p>In a rapidly changing world, agriculture remains one of the most promising and sustainable career paths. At Kioko Farms, we mentor young people to see farming not just as a tradition, but as a viable business powered by innovation, data, and passion.</p>
-    </div>
-
-    <div class="blog-post">
-      <h2>Building Resilient Kitchen Gardens</h2>
-      <div class="date">Posted on May 25, 2025</div>
-      <p>With food security becoming a national priority, kitchen gardens are revolutionizing how households access fresh vegetables. Learn how Kioko Farms trains families to grow more with less space, and how this changes lives in urban and rural settings alike.</p>
-    </div>
-
-    <div class="blog-post">
-      <h2>Integrating CBC in Farm Learning</h2>
-      <div class="date">Posted on April 30, 2025</div>
-      <p>The Competency-Based Curriculum (CBC) encourages learners to develop practical skills. Our farm serves as a classroom where children learn by doing—planting, harvesting, and solving real-life problems through agriculture-based learning modules.</p>
-    </div>
-
-    <div class="blog-post">
-      <h2>Our Seasonal Farm Diary: March to May</h2>
-      <div class="date">Posted on May 10, 2025</div>
-      <p>Take a journey through our seasonal routines—land preparation, planting, and community workshops. Discover how we balance tradition with innovation to maintain sustainable practices and healthy produce throughout the growing season.</p>
+  <div class="testimonial">
+    <p>"Kioko Farms introduced my students to hands-on CBC learning—practical and exciting!"</p>
+    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Profile Picture" class="profile-pic" />
+    <div class="rating">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star inactive"></div>
     </div>
   </div>
 
-  <div class="home-button">
-    <a href="index.html">Return to Home</a>
+  <div class="testimonial">
+    <p>"Thanks to Kioko Farms, my kitchen garden now feeds my entire household!"</p>
+    <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="Profile Picture" class="profile-pic" />
+    <div class="rating">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star inactive"></div>
+      <div class="star inactive"></div>
+    </div>
   </div>
 
   <footer>
