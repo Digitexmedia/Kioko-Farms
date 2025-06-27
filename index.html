@@ -11,11 +11,37 @@
       margin: 0;
       color: #333;
     }
+
     header {
       background: #4CAF50;
       color: white;
-      padding: 20px 0;
-      text-align: center;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-title img {
+      height: 60px;
+      margin-right: 15px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1em;
+      color: #dcedc8;
     }
 
     nav {
@@ -23,6 +49,7 @@
       justify-content: center;
       background: #388E3C;
       padding: 10px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -91,8 +118,13 @@
 </head>
 <body>
   <header>
-    <h1>Kioko Farms</h1>
-    <p>Empowering through Agriculture and Education</p>
+    <div class="logo-title">
+      <img src="https://files.catbox.moe/r3neh8.jpg" alt="Kioko Farms Logo" />
+      <div>
+        <h1>Kioko Farms</h1>
+        <p>Empowering through Agriculture and Education</p>
+      </div>
+    </div>
   </header>
 
   <nav>
