@@ -40,7 +40,7 @@
       margin-bottom: 30px;
     }
 
-    .email {
+    .email, .call {
       margin: 10px 0;
     }
 
@@ -65,6 +65,26 @@
       transform: scale(1.2);
     }
 
+    .home-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .home-button a {
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .home-button a:hover {
+      background: #388E3C;
+    }
+
     footer {
       background: #2E7D32;
       color: white;
@@ -84,10 +104,15 @@
     <h2>Get in Touch</h2>
 
     <div class="contact-details">
-      <p>You can contact us via email or through our social platforms below:</p>
+      <p>You can contact us via email, phone, or through our social platforms below:</p>
       <div class="email">
         <a href="mailto:Kiokofarms@gmail.com" title="Send Email">
           <img src="https://img.icons8.com/fluency/48/000000/new-post.png" alt="Email Icon" />
+        </a>
+      </div>
+      <div class="call">
+        <a href="tel:+254759953961" title="Call Us">
+          <img src="https://img.icons8.com/fluency/48/000000/phone.png" alt="Call Icon" />
         </a>
       </div>
     </div>
@@ -106,10 +131,14 @@
         <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram">
       </a>
     </div>
+
+    <div class="home-button">
+      <a href="index.html">Return to Home</a>
+    </div>
   </div>
 
   <footer>
     &copy; 2025 Kioko Farms. All rights reserved.
   </footer>
 </body>
-</html>
+  </html>
