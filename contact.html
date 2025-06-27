@@ -6,7 +6,7 @@
   <title>Contact | Kioko Farms</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background: #f0f0f0;
       color: #333;
@@ -14,34 +14,54 @@
 
     header {
       background: #4CAF50;
-      padding: 20px 0;
+      padding: 30px 20px;
       text-align: center;
       color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 8px;
     }
 
     .container {
       max-width: 700px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 25px;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     h2 {
       text-align: center;
       color: #2E7D32;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      font-size: 1.5rem;
     }
 
     .contact-details {
       text-align: center;
-      font-size: 1.1em;
+      font-size: 1.1rem;
       margin-bottom: 30px;
+    }
+
+    .contact-details p {
+      margin-bottom: 20px;
     }
 
     .email, .call {
       margin: 10px 0;
+    }
+
+    .email img, .call img {
+      width: 42px;
+      height: 42px;
     }
 
     .social-links {
@@ -51,13 +71,14 @@
 
     .social-links a {
       display: inline-block;
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
     }
 
     .social-links img {
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
+      border-radius: 6px;
       transition: transform 0.3s ease;
     }
 
@@ -66,8 +87,7 @@
     }
 
     .home-button {
-      display: flex;
-      justify-content: center;
+      text-align: center;
       margin-top: 40px;
     }
 
@@ -89,56 +109,76 @@
       background: #2E7D32;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 18px 10px;
+      margin-top: 60px;
+      font-size: 0.95rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .social-links img {
+        width: 40px;
+        height: 40px;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Contact Us</h1>
-    <p>We're here to connect and grow together</p>
+    <h1>Contact Kioko Farms</h1>
+    <p>We’re just a call, message, or DM away 🌱</p>
   </header>
 
   <div class="container">
     <h2>Get in Touch</h2>
 
     <div class="contact-details">
-      <p>You can contact us via email, phone, or through our social platforms below:</p>
+      <p>Reach out to us directly via email or phone:</p>
+
       <div class="email">
-        <a href="mailto:Kiokofarms@gmail.com" title="Send Email">
+        <a href="mailto:Kiokofarms@gmail.com" title="Send us an Email">
           <img src="https://img.icons8.com/fluency/48/000000/new-post.png" alt="Email Icon" />
         </a>
       </div>
       <div class="call">
-        <a href="tel:+254759953961" title="Call Us">
+        <a href="tel:+254759953961" title="Call Kioko Farms">
           <img src="https://img.icons8.com/fluency/48/000000/phone.png" alt="Call Icon" />
         </a>
       </div>
     </div>
 
     <div class="social-links">
+      <p>Or connect with us on social media:</p>
       <a href="https://wa.me/254759953961" target="_blank" title="WhatsApp">
-        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
       </a>
       <a href="https://www.facebook.com/wakine.deniskioko" target="_blank" title="Facebook">
-        <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook">
+        <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook" />
       </a>
       <a href="https://www.tiktok.com/@actuary.kioko?_t=ZM-8vX2zZDiNQD&_r=1" target="_blank" title="TikTok">
-        <img src="https://img.icons8.com/color/48/000000/tiktok--v1.png" alt="TikTok">
+        <img src="https://img.icons8.com/color/48/000000/tiktok--v1.png" alt="TikTok" />
       </a>
       <a href="https://www.instagram.com/actuary_kioko?igsh=emZleHozcXFuNXN5" target="_blank" title="Instagram">
-        <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram">
+        <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" />
       </a>
     </div>
 
     <div class="home-button">
-      <a href="index.html">Return to Home</a>
+      <a href="index.html">← Return to Home</a>
     </div>
   </div>
 
   <footer>
     &copy; 2025 Kioko Farms. All rights reserved.
   </footer>
+
 </body>
-  </html>
+</html>
