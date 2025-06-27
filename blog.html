@@ -3,94 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Testimonials with Ratings</title>
+  <title>Kioko Farms Blog - Kenya Agriculture Insights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fdfb;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      color: #333;
     }
 
-    .testimonial {
-      background: #fff;
+    header {
+      background-color: #4CAF50;
+      color: white;
       padding: 20px;
-      margin-bottom: 40px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    .profile-pic {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .blog-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .blog-post {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      padding: 25px;
+      transition: 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: scale(1.01);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    }
+
+    .blog-post h2 {
+      color: #2e7d32;
+      margin-top: 0;
+    }
+
+    .blog-post p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin: 10px 0;
+    }
+
+    .blog-post img {
+      width: 100%;
+      max-height: 300px;
       object-fit: cover;
+      border-radius: 10px;
       margin-top: 15px;
-      border: 3px solid #ddd;
     }
 
-    .rating {
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 5px;
-    }
-
-    .star {
-      width: 25px;
-      height: 25px;
-      background-color: gold;
-      clip-path: polygon(
-        50% 0%,
-        61% 35%,
-        98% 35%,
-        68% 57%,
-        79% 91%,
-        50% 70%,
-        21% 91%,
-        32% 57%,
-        2% 35%,
-        39% 35%
-      );
-    }
-
-    .star.inactive {
-      background-color: #ccc;
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <div class="testimonial">
-    <p>"Kioko Farms introduced my students to hands-on CBC learning—practical and exciting!"</p>
-    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Profile Picture" class="profile-pic" />
-    <div class="rating">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star inactive"></div>
-    </div>
-  </div>
+  <header>
+    <h1>Kioko Farms Blog</h1>
+    <p>Insights, tips & stories from Kenya's agricultural heart</p>
+  </header>
 
-  <div class="testimonial">
-    <p>"Thanks to Kioko Farms, my kitchen garden now feeds my entire household!"</p>
-    <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="Profile Picture" class="profile-pic" />
-    <div class="rating">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star inactive"></div>
-      <div class="star inactive"></div>
+  <div class="blog-container">
+
+    <div class="blog-post">
+      <h2>Climate-Smart Farming in Kenya: Why It Matters</h2>
+      <p>With erratic rainfall patterns and prolonged droughts in counties like Kitui and Machakos, climate-smart agriculture is no longer optional—it's essential. At Kioko Farms, we promote drip irrigation, mulching, and drought-resistant crops to ensure food security and sustainability in arid and semi-arid lands (ASALs).</p>
+      <img src="https://files.catbox.moe/7jvwrl.jpg" alt="Climate-smart farming in Kenya">
     </div>
+
+    <div class="blog-post">
+      <h2>Why More Kenyan Youth Should Embrace Agribusiness</h2>
+      <p>Agriculture is not just for the old generation. With access to technology, social media marketing, and mobile money platforms like M-PESA, the youth in Kenya can modernize agribusiness. Kioko Farms runs mentorship sessions to guide young farmers in starting agribusiness ventures—from greenhouse farming to poultry.</p>
+      <img src="https://files.catbox.moe/3ke4tp.jpg" alt="Youth in Agriculture">
+    </div>
+
+    <div class="blog-post">
+      <h2>Urban Farming: Growing Sukuma and Spinach in Nairobi Flats</h2>
+      <p>Don’t have land? No problem. Urban farming using vertical sacks, containers, or balconies is becoming popular in cities like Nairobi, Kisumu, and Mombasa. We show you how to grow sukuma wiki, spinach, and even tomatoes from the comfort of your apartment block. Perfect for reducing market costs and promoting healthy eating!</p>
+      <img src="https://files.catbox.moe/ox7gp0.jpg" alt="Urban farming in Nairobi">
+    </div>
+
+    <div class="blog-post">
+      <h2>How to Start a Profitable Chicken Project in Kenya</h2>
+      <p>Whether you're in Bungoma or Embu, poultry farming can be a reliable income stream. Start small with 50 layers or broilers, ensure quality feed, clean housing, and follow vaccination schedules. Kioko Farms can help with starter kits, feed planning, and market access via online platforms.</p>
+      <img src="https://files.catbox.moe/17rvfb.jpg" alt="Chicken rearing Kenya">
+    </div>
+
   </div>
 
   <footer>
-    &copy; 2025 Kioko Farms. All rights reserved.
+    &copy; 2025 Kioko Farms. Proudly farming in Kenya.
   </footer>
+
 </body>
 </html>
