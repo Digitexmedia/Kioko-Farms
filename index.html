@@ -1,118 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kioko Farms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f5f5;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f8f5;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background: #4CAF50;
+      background: linear-gradient(90deg, #4CAF50, #66BB6A);
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .logo-title {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .logo-title img {
-      height: 60px;
-      margin-right: 15px;
-      border-radius: 8px;
+      height: 70px;
+      margin-right: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #fff;
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.8em;
+      font-size: 2rem;
     }
 
     header p {
-      margin: 0;
-      font-size: 1em;
-      color: #dcedc8;
+      margin-top: 5px;
+      font-size: 1rem;
+      color: #e8f5e9;
+      max-width: 500px;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      background: #388E3C;
-      padding: 10px 0;
+      background: #2E7D32;
+      padding: 12px 0;
+      gap: 30px;
       flex-wrap: wrap;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      font-weight: 600;
+      transition: 0.3s;
     }
 
     nav a:hover {
+      color: #C8E6C9;
       text-decoration: underline;
     }
 
     .section {
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     .section h2 {
       text-align: center;
-      color: #2E7D32;
-      margin-bottom: 30px;
+      color: #1B5E20;
+      margin-bottom: 40px;
+      font-size: 2rem;
     }
 
     .category {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
+      text-align: center;
     }
 
     .category h3 {
-      color: #1B5E20;
+      color: #388E3C;
+      font-size: 1.5rem;
       margin-bottom: 10px;
     }
 
     .category p {
       max-width: 800px;
-      margin: auto;
-      font-size: 1.1em;
-      line-height: 1.6;
-      text-align: center;
+      margin: 0 auto 20px auto;
+      font-size: 1.1rem;
     }
 
     .images-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
       margin-top: 20px;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .images-grid img {
       width: 100%;
-      border-radius: 10px;
-      height: 200px;
+      border-radius: 12px;
+      height: 220px;
       object-fit: cover;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .images-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     footer {
-      background: #2E7D32;
+      background: #1B5E20;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 25px 10px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo-title {
+        justify-content: center;
+      }
+
+      header img {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -122,7 +156,7 @@
       <img src="https://files.catbox.moe/r3neh8.jpg" alt="Kioko Farms Logo" />
       <div>
         <h1>Kioko Farms</h1>
-        <p>We offer a dynamic range of services designed to empower farmers, Agribusiness and agricultural enthusiasts with the knowledge and strategies needed to thrive in today's ever evolving and innovative agricultural space</p>
+        <p>Empowering farmers, agribusiness, and agricultural enthusiasts with strategies to thrive in today's evolving agri-space.</p>
       </div>
     </div>
   </header>
@@ -134,50 +168,50 @@
     <a href="contact.html" data-page="contact">Contact</a>
   </nav>
 
-  <!-- Main content container -->
   <div id="main-content" class="section">
     <h2>Welcome to Kioko Farms</h2>
+
     <div class="category">
       <h3>CBC Learning</h3>
-      <p>At Kioko Farms, we champion the Competency-Based Curriculum (CBC) by offering learners hands-on experience in agriculture and sustainability...</p>
+      <p>Hands-on experience for learners in agriculture and sustainability under the CBC framework.</p>
       <div class="images-grid">
-        <img src="https://files.catbox.moe/sdy5d5.jpg?text=CBC1" />
-        <img src="https://files.catbox.moe/z68whz.jpg?text=CBC2" />
-        <img src="https://files.catbox.moe/j61zm0.jpg?text=CBC3" />
-        <img src="https://files.catbox.moe/42or97.jpg?text=CBC4" />
+        <img src="https://files.catbox.moe/sdy5d5.jpg" alt="CBC1" />
+        <img src="https://files.catbox.moe/z68whz.jpg" alt="CBC2" />
+        <img src="https://files.catbox.moe/j61zm0.jpg" alt="CBC3" />
+        <img src="https://files.catbox.moe/42or97.jpg" alt="CBC4" />
       </div>
     </div>
 
     <div class="category">
       <h3>Youth in Agriculture</h3>
-      <p>We believe the future of farming lies in the hands of the youth. Kioko Farms engages young people through mentorship...</p>
+      <p>Engaging youth through mentorship and skills to lead the future of farming.</p>
       <div class="images-grid">
-        <img src="https://files.catbox.moe/3ke4tp.jpg?text=Youth1" />
-        <img src="https://files.catbox.moe/31mzgq.jpg?text=Youth2" />
-        <img src="https://files.catbox.moe/ksvxte.jpg?text=Youth3" />
-        <img src="https://files.catbox.moe/t561xu.jpg?text=Youth4" />
+        <img src="https://files.catbox.moe/3ke4tp.jpg" alt="Youth1" />
+        <img src="https://files.catbox.moe/31mzgq.jpg" alt="Youth2" />
+        <img src="https://files.catbox.moe/ksvxte.jpg" alt="Youth3" />
+        <img src="https://files.catbox.moe/t561xu.jpg" alt="Youth4" />
       </div>
     </div>
 
     <div class="category">
       <h3>Kitchen Garden Setups</h3>
-      <p>To promote food security and healthy living, Kioko Farms offers guidance on setting up efficient kitchen gardens...</p>
+      <p>Guidance on setting up efficient kitchen gardens for food security and healthy living.</p>
       <div class="images-grid">
-        <img src="https://files.catbox.moe/ox7gp0.jpg?text=Kitchen1" />
-        <img src="https://files.catbox.moe/ksvxte.jpg?text=Kitchen2" />
-        <img src="https://files.catbox.moe/7nylye.jpg?text=Kitchen3" />
-        <img src="https://files.catbox.moe/10xzvt.jpg?text=Kitchen4" />
+        <img src="https://files.catbox.moe/ox7gp0.jpg" alt="Kitchen1" />
+        <img src="https://files.catbox.moe/ksvxte.jpg" alt="Kitchen2" />
+        <img src="https://files.catbox.moe/7nylye.jpg" alt="Kitchen3" />
+        <img src="https://files.catbox.moe/10xzvt.jpg" alt="Kitchen4" />
       </div>
     </div>
 
     <div class="category">
       <h3>Life in the Farm</h3>
-      <p>Life at Kioko Farms is vibrant and deeply rooted in community and nature. Our day-to-day routines include animal care, crop management...</p>
+      <p>Daily routines at Kioko Farms include animal care, crop management, and community life.</p>
       <div class="images-grid">
-        <img src="https://files.catbox.moe/17rvfb.jpg?text=Farm1" />
-        <img src="https://files.catbox.moe/t561xu.jpg?text=Farm2" />
-        <img src="https://files.catbox.moe/uedvnq.jpg?text=Farm3" />
-        <img src="https://files.catbox.moe/6htgjc.jpg?text=Farm4" />
+        <img src="https://files.catbox.moe/17rvfb.jpg" alt="Farm1" />
+        <img src="https://files.catbox.moe/t561xu.jpg" alt="Farm2" />
+        <img src="https://files.catbox.moe/uedvnq.jpg" alt="Farm3" />
+        <img src="https://files.catbox.moe/6htgjc.jpg" alt="Farm4" />
       </div>
     </div>
   </div>
