@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,113 +10,100 @@
       margin: 0;
       background: #f0f0f0;
       color: #333;
-    }header {
-  background: #4CAF50;
-  padding: 20px 0;
-  text-align: center;
-  color: white;
-}
+    }
 
-.container {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+    header {
+      background: #4CAF50;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
 
-h2 {
-  text-align: center;
-  color: #2E7D32;
-  margin-bottom: 20px;
-}
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+    h2 {
+      text-align: center;
+      color: #2E7D32;
+      margin-bottom: 20px;
+    }
 
-label {
-  margin-top: 15px;
-  font-weight: bold;
-}
+    .contact-details {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
 
-input, textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-}
+    .email {
+      margin: 10px 0;
+    }
 
-textarea {
-  resize: vertical;
-  height: 120px;
-}
+    .social-links {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-button {
-  margin-top: 20px;
-  background-color: #388E3C;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-}
+    .social-links a {
+      display: inline-block;
+      margin: 0 15px;
+      text-decoration: none;
+    }
 
-button:hover {
-  background-color: #2E7D32;
-}
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+    }
 
-.social-links {
-  text-align: center;
-  margin-top: 30px;
-}
+    .social-links img:hover {
+      transform: scale(1.2);
+    }
 
-.social-links a {
-  display: inline-block;
-  margin: 0 10px;
-  color: #388E3C;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer {
-  background: #2E7D32;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 50px;
-}
-
+    footer {
+      background: #2E7D32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Contact Us</h1>
     <p>We're here to connect and grow together</p>
-  </header>  <div class="container">
+  </header>
+
+  <div class="container">
     <h2>Get in Touch</h2>
-    <form action="#" method="post">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required /><label for="email">Email Address</label>
-  <input type="email" id="email" name="email" required />
 
-  <label for="message">Message</label>
-  <textarea id="message" name="message" required></textarea>
+    <div class="contact-details">
+      <p>You can contact us via email or through our social platforms below:</p>
+      <div class="email">
+        <strong>Email:</strong> <a href="mailto:kiokofarms@gmail.com">kiokofarms@gmail.com</a>
+      </div>
+    </div>
 
-  <button type="submit">Send Message</button>
-</form>
+    <div class="social-links">
+      <a href="https://wa.me/254795592566" target="_blank" title="WhatsApp">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.facebook.com/wakine.deniskioko" target="_blank" title="Facebook">
+        <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/@actuary.kioko?_t=ZM-8vX2zZDiNQD&_r=1" target="_blank" title="TikTok">
+        <img src="https://img.icons8.com/color/48/000000/tiktok--v1.png" alt="TikTok">
+      </a>
+    </div>
+  </div>
 
-<div class="social-links">
-  <p>Or reach out via:</p>
-  <a href="https://wa.me/254795592566" target="_blank">WhatsApp</a>
-  <a href="https://www.facebook.com/profile.php?id=100084310082364" target="_blank">Facebook</a>
-</div>
-
-  </div>  <footer>
+  <footer>
     &copy; 2025 Kioko Farms. All rights reserved.
   </footer>
 </body>
