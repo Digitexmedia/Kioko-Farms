@@ -1,51 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Kioko Farms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       background: #f4f4f4;
       color: #333;
     }
+
     header {
       background: #4CAF50;
-      padding: 30px 0;
+      padding: 40px 20px;
       text-align: center;
       color: white;
     }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
     .content {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 20px;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
     h2 {
       color: #2E7D32;
-      margin-bottom: 15px;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
     }
+
     p {
-      line-height: 1.7;
+      line-height: 1.8;
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: -10px;
       margin-bottom: 20px;
     }
-    .section {
-      margin-bottom: 30px;
+
+    li {
+      margin-bottom: 8px;
     }
+
     .highlight {
       background: #e8f5e9;
-      padding: 15px;
+      padding: 20px;
       border-left: 5px solid #66bb6a;
-      border-radius: 5px;
+      border-radius: 8px;
+      margin-bottom: 30px;
     }
+
+    .highlight h2 {
+      margin-top: 0;
+    }
+
     .home-button {
       text-align: center;
       margin: 40px 0;
     }
+
     .home-button a {
       background: #4CAF50;
       color: white;
@@ -55,61 +95,74 @@
       font-weight: bold;
       transition: background 0.3s ease;
     }
+
     .home-button a:hover {
       background: #388E3C;
     }
+
     footer {
       background: #2E7D32;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px 10px;
       margin-top: 60px;
+      font-size: 0.95rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>About Kioko Farms</h1>
     <p>Rooted in tradition. Growing with purpose.</p>
   </header>
 
   <div class="content">
+
     <div class="section">
       <h2>Empowering Learners Through CBC Integration</h2>
-      <p>Kioko Farms actively embraces Kenya’s Competency-Based Curriculum (CBC) to offer practical, hands-on learning experiences. We partner with schools to turn our farm into a real-life classroom where learners engage in experiential learning tied to core CBC competencies such as environmental conservation, critical thinking, problem-solving, and creativity.</p>
-      <p>Our CBC-aligned programs include guided tours, farm-based science projects, agriculture-themed assignments, and interactive farm diaries. We allow learners to plant, nurture, harvest, and document agricultural cycles—fostering ownership and a deep understanding of food systems. Students learn not just to grow crops, but also how to calculate yields, assess soil quality, and apply eco-friendly solutions, bridging theory with real-world application.</p>
+      <p>Kioko Farms actively embraces Kenya’s Competency-Based Curriculum (CBC) by offering practical, hands-on learning. We partner with schools to transform our farm into a real-life classroom where learners gain core competencies like critical thinking, creativity, and environmental awareness.</p>
+      <img src="https://files.catbox.moe/sdy5d5.jpg?text=CBC1" alt="CBC Learning at Kioko Farms">
     </div>
 
     <div class="section">
       <h2>Youth in Agriculture: Cultivating the Future</h2>
-      <p>At Kioko Farms, we view the youth as the drivers of tomorrow's food systems. Through our <strong>Youth in Agriculture Initiative</strong>, we train, mentor, and empower young people to embrace agribusiness as a modern, profitable, and innovative career path. We debunk myths that agriculture is old-fashioned or unskilled work by introducing youth to mechanized tools, climate-smart practices, agritech, and entrepreneurial thinking.</p>
-      <p>Programs include:</p>
+      <p>Our <strong>Youth in Agriculture Initiative</strong> empowers young people to embrace agribusiness as a career. We challenge the outdated view that farming is low-skilled by introducing modern tools, agritech, and entrepreneurial strategies.</p>
       <ul>
         <li>Fellowships and internships for university students</li>
-        <li>Weekend farming clubs for high school youth</li>
-        <li>Access to seed funding for youth-led garden projects</li>
-        <li>Training in digital marketing for farm products</li>
+        <li>Weekend farming clubs for high schoolers</li>
+        <li>Seed funding for youth-led agri-projects</li>
+        <li>Digital marketing training for produce sales</li>
       </ul>
-      <p>Through exposure, mentorship, and real investment in skills, we’re building a new generation of food leaders, innovators, and agri-entrepreneurs.</p>
+      <img src="https://files.catbox.moe/t561xu.jpg" alt="Youth Farming Training">
     </div>
 
     <div class="section">
       <h2>Kitchen Garden Setups: Growing More with Less</h2>
-      <p>Food security starts at home. That’s why Kioko Farms trains households, schools, and youth groups on how to establish productive kitchen gardens—even in tight urban spaces. These small-scale gardens make use of creative structures such as sack gardens, hanging containers, vertical towers, and recycled plastic buckets.</p>
-      <p>Our kitchen garden packages include:</p>
+      <p>Whether you're in Nairobi or Machakos, you can grow food even in tight urban spaces. We teach families, schools, and youth groups how to set up sack gardens, vertical towers, and bucket farms for daily nutrition and self-reliance.</p>
       <ul>
-        <li>Customized garden layout based on your space</li>
-        <li>Free seedlings and organic manure</li>
-        <li>Workshops on pest control and composting</li>
-        <li>Monthly check-ins and harvest support</li>
+        <li>Custom garden plans & layout designs</li>
+        <li>Free seedlings and organic compost</li>
+        <li>Workshops on composting & pest control</li>
+        <li>Monthly harvest check-ins</li>
       </ul>
-      <p>From kale and spinach to tomatoes, carrots, and herbs, families can reduce their grocery expenses while improving their nutrition and gaining farming skills.</p>
+      <img src="https://files.catbox.moe/ox7gp0.jpg" alt="Kitchen Garden Example">
     </div>
 
     <div class="section">
       <h2>Life on the Farm: A Community in Motion</h2>
-      <p>Kioko Farms isn’t just a place of work—it’s a lifestyle, a community, and a story of harmony between people and nature. A typical day begins with early morning irrigation, followed by livestock care, training sessions, school visits, and group workshops. Volunteers help collect eggs, prune vegetables, and document growth patterns for research.</p>
-      <p>Life here is punctuated by stories under the mango trees, laughter in the greenhouse, and evening bonfires where experiences are shared. We balance hard work with mentorship, education, and joy—creating a space where people reconnect with the land and each other. Our commitment to sustainability is evident in every action—from water harvesting and organic composting to energy-efficient tools and ecological preservation zones.</p>
+      <p>Life at Kioko Farms is a blend of work, learning, and laughter. From early irrigation routines to school visits and evening bonfires, every day is an opportunity to connect with the land and community. Volunteers and guests experience farm life through participation and shared stories.</p>
+      <img src="https://files.catbox.moe/3ke4tp.jpg?text=Youth1" alt="Life at the Farm">
     </div>
 
     <div class="highlight">
@@ -125,21 +178,23 @@
     <div class="highlight">
       <h2>Our Core Values</h2>
       <ul>
-        <li><strong>Integrity</strong> – Honesty and transparency in all that we do.</li>
-        <li><strong>Innovation</strong> – Embracing creativity and smart solutions.</li>
-        <li><strong>Community</strong> – Serving and growing together.</li>
-        <li><strong>Sustainability</strong> – Caring for our environment and future.</li>
-        <li><strong>Empowerment</strong> – Equipping people to lead and succeed.</li>
+        <li><strong>Integrity</strong> – Honesty and transparency in all we do</li>
+        <li><strong>Innovation</strong> – Embracing creativity and technology</li>
+        <li><strong>Community</strong> – Uplifting each other through collaboration</li>
+        <li><strong>Sustainability</strong> – Caring for the planet and the future</li>
+        <li><strong>Empowerment</strong> – Equipping people to lead and thrive</li>
       </ul>
     </div>
 
     <div class="home-button">
-      <a href="index.html">Return to Home</a>
+      <a href="index.html">← Return to Home</a>
     </div>
+
   </div>
 
   <footer>
     &copy; 2025 Kioko Farms. All rights reserved.
   </footer>
+
 </body>
-  </html>
+</html>
